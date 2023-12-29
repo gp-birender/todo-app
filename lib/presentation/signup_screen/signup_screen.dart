@@ -10,8 +10,6 @@ import 'package:todoapp/widgets/custom_text_form_field.dart';
 class SignupScreen extends StatelessWidget {
   SignupScreen({Key? key}) : super(key: key);
 
-  TextEditingController firstNameController = TextEditingController();
-
   TextEditingController lastNameController = TextEditingController();
 
   TextEditingController emailController = TextEditingController();
@@ -42,8 +40,6 @@ class SignupScreen extends StatelessWidget {
                               imagePath: ImageConstant.imgLogoGray5001120x114,
                               height: 120.v,
                               width: 114.h),
-                          SizedBox(height: 96.v),
-                          _buildFirstName(context),
                           SizedBox(height: 24.v),
                           _buildLastName(context),
                           SizedBox(height: 24.v),
@@ -118,12 +114,6 @@ class SignupScreen extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: CustomTextStyles.bodySmallBlack900.copyWith(height: 1.67)))
     ]);
-  }
-
-  /// Section Widget
-  Widget _buildFirstName(BuildContext context) {
-    return CustomTextFormField(
-        controller: firstNameController, hintText: "First name");
   }
 
   /// Section Widget

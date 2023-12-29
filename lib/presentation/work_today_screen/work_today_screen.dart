@@ -23,7 +23,7 @@ class WorkTodayScreen extends StatelessWidget {
                   _buildDateRow(context),
                   SizedBox(height: 59.v),
                   _buildTodoWorkItem1(context),
-                  _buildTodoWorkItem2(context),
+                  _buildTodoWorkItem(context),
                   SizedBox(height: 96.v),
                   CustomElevatedButton(
                       text: "Make a wish list",
@@ -103,7 +103,7 @@ class WorkTodayScreen extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildTodoWorkItem2(BuildContext context) {
+  Widget _buildTodoWorkItem(BuildContext context) {
     return Container(
         padding: EdgeInsets.symmetric(horizontal: 27.h, vertical: 15.v),
         decoration: AppDecoration.fillWhiteA,
